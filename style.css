@@ -1,0 +1,88 @@
+:root {
+  --primary-moderate-violete: hsl(263, 55%, 52%);
+  --primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --neutral-light-gray: hsl(0, 0%, 81%);
+  --neutral-grayish-blue: hsl(210, 46%, 95%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Styling */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 1.38;
+  opacity: 0.7;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Barlow", sans-serif;
+}
+
+.fs-11px {
+  color: var(--white);
+  font-size: 0.688rem;
+  font-weight: 500;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.color-white {
+  color: var(--white);
+}
