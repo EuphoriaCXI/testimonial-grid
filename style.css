@@ -55,10 +55,12 @@ ul {
 }
 
 /* Styling */
-h2 {
+.card blockquote > p:first-child {
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 1.125rem;
+  line-height: normal;
+  opacity: 1;
 }
 
 p {
@@ -100,11 +102,13 @@ a {
 .body__container {
   background-color: var(--neutral-grayish-blue);
   padding: 4.438rem 1.5rem;
+  min-width: 25rem;
 }
 
 .card__wrapper {
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
 }
 
 .card {
@@ -198,15 +202,19 @@ a {
   margin-top: 1rem;
 }
 
-@media screen and (min-width: 48.063rem) {
+@media screen and (min-width: 72.813rem) {
   .body__container {
-    padding: 10.313rem;
+    padding-top: 10.313rem;
   }
 
   .card__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 16rem);
+    justify-content: center;
+    align-self: center;
     gap: 1.875rem;
+    max-width: 90rem;
+    margin: 0 auto;
   }
 
   /* grid-area: row-start col-start row-end col-end */
@@ -226,5 +234,9 @@ a {
   .card:nth-of-type(1) blockquote p:nth-child(2) {
     margin-top: 1rem;
     padding-right: 0;
+  }
+
+  .card:nth-of-type(1)::before {
+    right: 5rem;
   }
 }
